@@ -115,7 +115,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .theme-blockquote {
-    background-color: rgba(21, 183, 171, 0.2);
+    background-color: rgba(21, 183, 171, 0.1);
     border-left: 2px solid #15B7AB;
     padding-left: 1em;
     padding: 10px;
@@ -123,6 +123,15 @@ section.resume-section .resume-item .resume-date {
 
 .resume-content {
     width: 100%;
+}
+
+h2.mb-5,
+h3 {
+    color: #15B7AB;
+}
+
+h2 {
+    border-bottom: 1px solid #15B7AB;
 }
 
 @media (min-width:768px) {
