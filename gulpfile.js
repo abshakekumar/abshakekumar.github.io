@@ -1,11 +1,11 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var browserSync = require('browser-sync').create();
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -26,6 +26,18 @@ gulp.task('vendor', function() {
       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
     ])
     .pipe(gulp.dest('./vendor/bootstrap'))
+
+  // Devicons
+  gulp.src([
+      './node_modules/devicons/**/*',
+      '!./node_modules/devicons/*.json',
+      '!./node_modules/devicons/*.md',
+      '!./node_modules/devicons/!PNG',
+      '!./node_modules/devicons/!PNG/**/*',
+      '!./node_modules/devicons/!SVG',
+      '!./node_modules/devicons/!SVG/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/devicons'))
 
   // Font Awesome
   gulp.src([
