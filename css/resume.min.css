@@ -107,6 +107,7 @@ h2 {
 
 section.resume-section {
     border-bottom: 5em solid #17CCBF;
+    border-top: 1em solid #17CCBF;
     padding-top: 5rem!important;
     padding-bottom: 5rem!important;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -118,7 +119,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .theme-blockquote {
-    background-color: rgba(21, 183, 171, 0.1);
+    background-color: rgba(21, 183, 171, 0.2);
     border-left: 2px solid #15B7AB;
     padding-left: 1em;
     padding: 10px;
@@ -150,7 +151,7 @@ h2 {
 
 .container-fluid {
     padding: 1em;
-    background-color: #17CCBF;
+    background-color: rgba(21, 183, 171, 0.2);
     padding-right: 5em;
 }
 
