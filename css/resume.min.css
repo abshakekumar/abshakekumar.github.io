@@ -133,6 +133,12 @@ section.resume-section .resume-item .resume-date {
     width: 100%;
 }
 
+.project-for {
+    font-size: 20px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
 h3 {
     color: #15B7AB;
 }
