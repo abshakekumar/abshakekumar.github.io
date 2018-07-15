@@ -125,6 +125,10 @@ section.resume-section .resume-item .resume-date {
     padding: 10px;
 }
 
+.theme-blockquote>.subheading:first-child {
+    margin: 0 !important;
+}
+
 .resume-content {
     width: 100%;
 }
