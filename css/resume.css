@@ -1,5 +1,6 @@
 :root {
     --theme-color: black;
+    --theme-color-light: 0,0,0;
   }
 
 body {
@@ -110,8 +111,8 @@ h2 {
 }
 
 section.resume-section {
-    border-bottom: 5em solid #17CCBF;
-    border-top: 1em solid #17CCBF;
+    border-bottom: 5em solid var(--theme-color);
+    border-top: 1em solid var(--theme-color);
     padding-top: 5rem!important;
     padding-bottom: 5rem!important;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -123,7 +124,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .theme-blockquote {
-    background-color: rgba(21, 183, 171, 0.2);
+    /* background-color: rgba(21, 183, 171, 0.2); */
+    background-color: rgba(var(--theme-color-light), 0.2);
     border-left: 2px solid var(--theme-color);;
     padding-left: 1em;
     padding: 10px;
@@ -165,7 +167,8 @@ h2 {
 
 .container-fluid {
     padding: 1em;
-    background-color: rgba(21, 183, 171, 0.2);
+    /* background-color: rgba(21, 183, 171, 0.2); */
+    background-color: rgba(var(--theme-color-light), 0.2);
 }
 
 nav,
@@ -179,7 +182,8 @@ section {
 
 ::selection {
     color: white;
-    background: rgba(21, 183, 171, 0.8);
+    /* background: rgba(21, 183, 171, 0.8); */
+    background: rgba(var(--theme-color-light), 0.8);
 }
 
 @media (min-width:768px) {
