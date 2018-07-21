@@ -2,13 +2,14 @@
     --theme-color: #f9aa33;
     --theme-color-rgb: 0,0,0;
     --secondary-color: gray;
-    --secondary-color-rgb: 249 170 51;
+    --secondary-color-rgb: 249,170,51;
   }
 
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
-    color: #868e96
+    color: rgba(249,170,51,0.7);
+    color: rgba(var(--secondary-color-rgb),0.7);
 }
 
 @media (min-width:992px) {
@@ -186,7 +187,8 @@ section {
 ::selection {
     color: white;
     /* background: rgba(21, 183, 171, 0.8); */
-    background: rgba(var(--secondary-color-rgb), 0.8);
+    background: rgba(249,170,51,0.8);
+    /* background: rgba(var(--secondary-color-rgb), 0.8); */
 }
 
 @media (min-width:768px) {
