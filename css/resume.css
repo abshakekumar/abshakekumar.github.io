@@ -28,7 +28,7 @@ h6 {
     font-family: 'Saira Extra Condensed', serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40
+    /* color: #343a40 */
 }
 
 h1 {
@@ -49,11 +49,16 @@ h2 {
 }
 
 .list-social-icons a {
-    color: #495057
+    color: rgba(var(--secondary-color-rgb), 0.2)
 }
 
 .list-social-icons a:hover {
     color: var(--theme-color);
+}
+
+.list-social-icons a:hover .fa-inverse,
+.list-social-icons a:focus .fa-inverse{
+    color: var(--secondary-color);
 }
 
 .list-social-icons a .fa-lg {
@@ -128,7 +133,6 @@ section.resume-section .resume-item .resume-date {
 }
 
 .theme-blockquote {
-    /* background-color: rgba(21, 183, 171, 0.2); */
     background-color: rgba(var(--theme-color-rgb), 0.2);
     border-left: 2px solid var(--theme-color);;
     padding-left: 1em;
@@ -171,7 +175,6 @@ h2 {
 
 .container-fluid {
     padding: 1em;
-    /* background-color: rgba(21, 183, 171, 0.2); */
     background-color: rgba(var(--theme-color-rgb), 0.2);
 }
 
@@ -180,15 +183,12 @@ nav,
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-section {
-    background-color: white;
+.fa-inverse{
+    color: rgba(var(--secondary-color-rgb), 0.8);
 }
-
 ::selection {
     color: white;
-    /* background: rgba(21, 183, 171, 0.8); */
     background: rgba(249,170,51,0.8);
-    /* background: rgba(var(--secondary-color-rgb), 0.8); */
 }
 
 @media (min-width:768px) {
