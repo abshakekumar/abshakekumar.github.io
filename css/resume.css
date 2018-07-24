@@ -125,7 +125,8 @@ section.resume-section .resume-item .resume-date {
 
 .theme-blockquote {
     /* background-color: rgba(21, 183, 171, 0.2); */
-    background-color: rgba(var(--theme-color-light), 0.2);
+    /* background-color: rgba(var(--theme-color-light), 0.2); */
+    background: linear-gradient(to right, rgba(0,0,0,0),darkgray);
     border-left: 2px solid var(--theme-color);;
     padding-left: 1em;
     padding: 10px;
